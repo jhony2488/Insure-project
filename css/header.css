@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+.header {
+  min-width: 100%;
+  max-width: 100%;
+  background-color: hsl(0, 0%, 98%);
+  display: grid;
+  padding: 20px;
+  grid-template-columns: 40% 60%;
+  font-family: 'DM Serif Display', serif;
+  position: static;
+}
+.logo {
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  height: 100%;
+  align-items: center;
+}
+.logo img {
+  cursor: pointer;
+}
+.nav {
+  width: 100%;
+  display: grid;
+  justify-items: flex-end;
+  text-transform: uppercase;
+}
+.nav-mobile {
+  min-width: 100%;
+  display: none;
+  align-items: flex-start;
+  justify-items: center;
+  text-transform: uppercase;
+  background-image: url('../images/bg-pattern-mobile-nav.svg');
+  background-position-x: center;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: hsl(256, 26%, 20%);
+  min-height: 100vh;
+  position: fixed;
+  z-index: 999;
+  font-size: 20px;
+}
+.nav ul {
+  display: flex;
+  justify-items: center;
+  list-style: none;
+  margin-right: 50px;
+}
+.nav-mobile ul {
+  display: grid;
+  justify-items: center;
+  list-style: none;
+}
+.nav ul li {
+  margin-left: 20px;
+  padding: 10px;
+}
+.nav-mobile ul li {
+  margin-top: 10px;
+  padding: 10px;
+}
+.nav ul li a {
+  text-decoration: none;
+  color: hsl(273, 4%, 51%);
+}
+.nav-mobile ul li a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+.view {
+  background-color: rgb(59, 55, 55);
+  cursor: pointer;
+}
+.view .a {
+  color: whitesmoke;
+}
+.view .a:hover,
+.view .a:active {
+  color: white;
+}
+.view:hover {
+  background-color: rgb(0, 0, 0);
+}
+.nav ul li a:hover,
+.nav ul li a:active {
+  color: hsl(273, 4%, 3%);
+}
+#x {
+  display: none;
+  justify-items: flex-end;
+}
+.hamburguer {
+  display: none;
+  font-size: 18px;
+  color: rgb(68, 67, 67);
+  cursor: pointer;
+}
+.hamburguer div {
+  padding: 3px;
+  width: 30px;
+  float: right;
+  display: grid;
+  justify-items: center;
+}
+@media (max-width: 1000px) {
+  .nav {
+    display: none;
+  }
+  .hamburguer {
+    display: block;
+    float: right;
+    width: 100%;
+  }
+  .header {
+    grid-template-columns: 70% 30%;
+  }
+}
