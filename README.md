@@ -1,2 +1,2 @@
 # Insure-project
-[demonstration] ()
+[Contribution guidelines for this project](docs/CONTRIBUTING.md)
